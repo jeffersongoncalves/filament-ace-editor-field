@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file.
 
+## 1.0.2 - 2025-08-17
+
+**Full Changelog**: https://github.com/jeffersongoncalves/filament-ace-editor-field/compare/1.0.1...1.0.2
+
 ## 1.0.1 - 2025-08-17
 
 ### What's Changed
