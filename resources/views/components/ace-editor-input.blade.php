@@ -1,5 +1,6 @@
 @php
-    use Filament\Support\Facades\FilamentAsset;$hasInlineLabel = $hasInlineLabel();
+    use Filament\Support\Facades\FilamentAsset;
+    $hasInlineLabel = $hasInlineLabel();
     $isConcealed = $isConcealed();
     $isDisabled = $isDisabled();
     $rows = $getRows();

@@ -14,7 +14,7 @@ class AceEditorInput extends Field
     use HasExtraAlpineAttributes;
     use HasPlaceholder;
 
-    protected string $view = 'filament-ace-editor-field-field::forms.components.ace-editor-input';
+    protected string $view = 'filament-ace-editor-field::components.ace-editor-input';
 
     protected int|Closure|null $cols = null;
 
