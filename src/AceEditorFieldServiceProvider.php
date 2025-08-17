@@ -30,11 +30,12 @@ class AceEditorFieldServiceProvider extends PackageServiceProvider
     {
         return 'jeffersongoncalves/filament-ace-editor-field';
     }
+
     protected function getAssets(): array
     {
         return [
-            AlpineComponent::make('filament-ace-editor-field', __DIR__ . '/../resources/dist/filament-ace-editor-field.js'),
-            Css::make('filament-ace-editor-field', __DIR__ . '/../resources/dist/filament-ace-editor-field.css'),
+            AlpineComponent::make('filament-ace-editor-field', __DIR__.'/../resources/dist/filament-ace-editor-field.js'),
+            Css::make('filament-ace-editor-field', __DIR__.'/../resources/dist/filament-ace-editor-field.css'),
         ];
     }
 }

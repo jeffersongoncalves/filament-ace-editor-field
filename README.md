@@ -10,7 +10,7 @@
 [![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/jeffersongoncalves/filament-ace-editor-field/fix-php-code-style-issues.yml?branch=master&label=code%20style&style=flat-square)](https://github.com/jeffersongoncalves/filament-ace-editor-field/actions?query=workflow%3A"Fix+PHP+code+styling"+branch%3Amaster)
 [![Total Downloads](https://img.shields.io/packagist/dt/jeffersongoncalves/filament-ace-editor-field.svg?style=flat-square)](https://packagist.org/packages/jeffersongoncalves/filament-ace-editor-field)
 
-A Laravel Filament package that provides QR Code field functionality for your web applications. This package extends Filament v4 with a simple QR code input component.
+A Laravel Filament v4 field that integrates the Ace code editor into your forms, offering a rich, syntax-highlighted code editing experience with configurable modes and themes.
 
 ## Requirements
 
@@ -27,13 +27,17 @@ composer require jeffersongoncalves/filament-ace-editor-field
 
 ## Usage
 
-Once installed, you can use the Ace EditorInput component in your Filament forms:
+Once installed, you can use the AceEditorInput component in your Filament forms:
 
 ```php
 use JeffersonGoncalves\Filament\AceEditorField\Forms\Components\AceEditorInput;
 
 // In your form definition
-AceEditorInput::make('ace editor')
+AceEditorInput::make('description')
+    ->mode('html')
+    ->theme('monokai')
+    ->height(200)
+    ->placeholder('Enter your description here')
     ->required(),
 ```
 

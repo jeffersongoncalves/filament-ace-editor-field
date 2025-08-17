@@ -1,6 +1,6 @@
 {
     "name": "jeffersongoncalves/filament-ace-editor-field",
-    "description": "A Laravel Filament package that provides QR Code field functionality for your web applications. This package extends Filament v3 with a simple QR code input component.",
+    "description": "A Laravel Filament v4 field that integrates the Ace code editor into your forms, providing a rich, syntax‑highlighted code editing experience.",
     "keywords": [
         "jeffersongoncalves",
         "laravel",
