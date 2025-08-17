@@ -11,7 +11,6 @@
     $enabledExtensions = $getEnabledExtensions();
     $editorOptions = $getEditorOptions();
 @endphp
-
 <x-dynamic-component
     :component="$getFieldWrapperView()"
     :field="$field"
@@ -19,7 +18,7 @@
     <x-slot
         name="label"
         @class([
-            'sm:pt-1.5' => $hasInlineLabel,
+            'ace-editor-label' => $hasInlineLabel,
         ])
     >
         {{ $getLabel() }}
