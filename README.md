@@ -30,7 +30,7 @@ composer require jeffersongoncalves/filament-ace-editor-field
 Once installed, you can use the Ace EditorInput component in your Filament forms:
 
 ```php
-use JeffersonGoncalves\Filament\Ace EditorField\Forms\Components\AceEditorInput;
+use JeffersonGoncalves\Filament\AceEditorField\Forms\Components\AceEditorInput;
 
 // In your form definition
 AceEditorInput::make('ace editor')

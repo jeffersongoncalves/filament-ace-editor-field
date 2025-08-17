@@ -1,0 +1,18 @@
+{
+    "private": true,
+    "type": "module",
+    "scripts": {
+        "build:styles": "postcss resources/css/index.css -o resources/dist/filament-ace-editor-field.css",
+        "build:scripts": "node bin/build.js",
+        "build": "npm-run-all build:*"
+    },
+    "devDependencies": {
+        "ace-builds": "^1.43.2",
+        "cssnano": "^6.1.2",
+        "esbuild": "^0.25.5",
+        "npm-run-all": "^4.1.5",
+        "postcss": "^8.4.27",
+        "postcss-cli": "^10.1.0",
+        "postcss-nesting": "^13.0.0"
+    }
+}
