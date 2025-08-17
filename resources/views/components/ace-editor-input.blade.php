@@ -34,10 +34,10 @@
         <div
             wire:ignore
             x-ignore
-            ax-load
-            ax-load-src="{{ FilamentAsset::getAlpineComponentSrc('filament-ace-editor-field', 'jeffersongoncalves/filament-ace-editor-field') }}"
+            x-load
+            x-load-src="{{ FilamentAsset::getAlpineComponentSrc('filament-ace-editor-field', 'jeffersongoncalves/filament-ace-editor-field') }}"
             x-data="aceEditorComponent({
-                state: $wire.{{ $applyStateBindingModifiers("\$entangle('{$statePath}')", isOptimisticallyLive: false) }},
+                state: $wire.{{ $applyStateBindingModifiers("entangle('{$statePath}')", isOptimisticallyLive: false) }},
                 statePath: '{{ $statePath }}',
                 placeholder: @js($getPlaceholder() ?? '// input your code here.'),
                 aceUrl: '{{ $aceUrl }}',
