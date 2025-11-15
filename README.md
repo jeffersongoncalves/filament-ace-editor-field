@@ -17,6 +17,15 @@ A Laravel Filament v4 field that integrates the Ace code editor into your forms,
 - PHP 8.2 or higher
 - Filament 4.0 or higher
 
+
+## Version Compatibility
+
+| Plugin Version | Filament Version | PHP Version |
+| -------------- | ---------------- | ----------- |
+| `^2.0`         | `^5.0`           | `^8.2`      |
+| `^1.0`         | `^4.0`           | `^8.2`      |
+
+
 ## Installation
 
 You can install the package via composer:
