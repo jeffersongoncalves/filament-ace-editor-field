@@ -36,6 +36,13 @@ composer require jeffersongoncalves/filament-ace-editor-field
 
 ## Usage
 
+Publish config file.
+
+```bash
+php artisan vendor:publish --tag=filament-ace-editor-field-config
+```
+
+
 Once installed, you can use the AceEditorInput component in your Filament forms:
 
 ```php
