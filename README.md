@@ -42,7 +42,6 @@ Publish config file.
 php artisan vendor:publish --tag=filament-ace-editor-field-config
 ```
 
-
 Once installed, you can use the AceEditorInput component in your Filament forms:
 
 ```php
