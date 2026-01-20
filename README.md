@@ -22,7 +22,7 @@ A Laravel Filament v4 field that integrates the Ace code editor into your forms,
 You can install the package via composer:
 
 ```bash
-composer require jeffersongoncalves/filament-ace-editor-field
+composer require jeffersongoncalves/filament-ace-editor-field:^2.0
 ```
 
 ## Usage
