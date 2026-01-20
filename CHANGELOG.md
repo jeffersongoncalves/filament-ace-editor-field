@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file.
 
+## 2.0.0 - 2026-01-20
+
+### What's Changed
+
+* build(deps): bump stefanzweifel/git-auto-commit-action from 6 to 7 by @dependabot[bot] in https://github.com/jeffersongoncalves/filament-ace-editor-field/pull/2
+
+**Full Changelog**: https://github.com/jeffersongoncalves/filament-ace-editor-field/compare/1.0.3...2.0.0
+
 ## 1.0.3 - 2025-08-17
 
 **Full Changelog**: https://github.com/jeffersongoncalves/filament-ace-editor-field/compare/1.0.2...1.0.3
