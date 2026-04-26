@@ -1,6 +1,6 @@
 <div class="filament-hidden">
 
-![Filament Ace Editor Field](https://raw.githubusercontent.com/jeffersongoncalves/filament-ace-editor-field/1.x/art/jeffersongoncalves-filament-ace-editor-field.jpg)
+![Filament Ace Editor Field](https://raw.githubusercontent.com/jeffersongoncalves/filament-ace-editor-field/1.x/art/jeffersongoncalves-filament-ace-editor-field.png)
 
 </div>
 
