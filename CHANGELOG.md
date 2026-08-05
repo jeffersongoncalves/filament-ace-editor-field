@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file.
 
+## 2.0.2 - 2026-08-05
+
+### What's Changed
+
+* build(deps-dev): bump postcss from 8.5.8 to 8.5.10 in the npm_and_yarn group across 1 directory by @dependabot[bot] in https://github.com/jeffersongoncalves/filament-ace-editor-field/pull/11
+* build(deps): bump ramsey/composer-install from 3 to 4 by @dependabot[bot] in https://github.com/jeffersongoncalves/filament-ace-editor-field/pull/12
+* build(deps): bump actions/checkout from 5 to 6 by @dependabot[bot] in https://github.com/jeffersongoncalves/filament-ace-editor-field/pull/13
+* build(deps-dev): bump esbuild from 0.25.12 to 0.28.1 in the npm_and_yarn group across 1 directory by @dependabot[bot] in https://github.com/jeffersongoncalves/filament-ace-editor-field/pull/14
+* build(deps): bump actions/checkout from 6 to 7 by @dependabot[bot] in https://github.com/jeffersongoncalves/filament-ace-editor-field/pull/15
+* build(deps-dev): bump postcss from 8.5.10 to 8.5.18 in the npm_and_yarn group across 1 directory by @dependabot[bot] in https://github.com/jeffersongoncalves/filament-ace-editor-field/pull/16
+* build(deps-dev): bump the actions-deps group with 5 updates by @dependabot[bot] in https://github.com/jeffersongoncalves/filament-ace-editor-field/pull/17
+
+**Full Changelog**: https://github.com/jeffersongoncalves/filament-ace-editor-field/compare/2.0.1...2.0.2
+
 ## 2.0.1 - 2026-03-04
 
 ### Breaking Changes
