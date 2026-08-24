@@ -8,7 +8,7 @@
     },
     "devDependencies": {
         "ace-builds": "^1.44.0",
-        "cssnano": "^8.0.5",
+        "cssnano": "^8.0.7",
         "esbuild": "^0.28.2",
         "npm-run-all2": "^9.0.3",
         "postcss": "^8.5.26",
