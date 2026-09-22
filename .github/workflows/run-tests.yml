@@ -14,40 +14,40 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
-      matri[1.x]:
-        php: ['8[1.x][1.x]', '8[1.x]3', '8[1.x]4']
-        laravel: ['11[1.x]*', '1[1.x][1.x]*', '13[1.x]*']
+      matrix:
+        php: ['8.2', '8.3', '8.4']
+        laravel: ['11.*', '12.*', '13.*']
         include:
-          - laravel: '11[1.x]*'
-            testbench: '9[1.x]*'
-          - laravel: '1[1.x][1.x]*'
-            testbench: '10[1.x]*'
-          - laravel: '13[1.x]*'
-            testbench: '11[1.x]*'
-        e[1.x]clude:
-          - laravel: '13[1.x]*'
-            php: '8[1.x][1.x]'
+          - laravel: '11.*'
+            testbench: '9.*'
+          - laravel: '12.*'
+            testbench: '10.*'
+          - laravel: '13.*'
+            testbench: '11.*'
+        exclude:
+          - laravel: '13.*'
+            php: '8.2'
 
-    name: P${{ matri[1.x][1.x]php }} - L${{ matri[1.x][1.x]laravel }}
+    name: P${{ matrix.php }} - L${{ matrix.laravel }}
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@3d3c4[1.x]e5aac5ba8058[1.x]5da76410c181[1.x]73ba90b1 # v7
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
 
       - name: Setup PHP
-        uses: shivammathur/setup-php@f3e473d116dcccaddc5834[1.x]48c8745[1.x]386958[1.x]40 # v[1.x]
+        uses: shivammathur/setup-php@f3e473d116dcccaddc5834248c87452386958240 # v2
         with:
-          php-version: ${{ matri[1.x][1.x]php }}
-          e[1.x]tensions: dom, curl, lib[1.x]ml, mbstring, zip, pdo, sqlite, pdo_sqlite, intl, fileinfo
+          php-version: ${{ matrix.php }}
+          extensions: dom, curl, libxml, mbstring, zip, pdo, sqlite, pdo_sqlite, intl, fileinfo
           coverage: none
 
       - name: Install dependencies
         env:
-          LARAVEL: ${{ matri[1.x][1.x]laravel }}
-          TESTBENCH: ${{ matri[1.x][1.x]testbench }}
+          LARAVEL: ${{ matrix.laravel }}
+          TESTBENCH: ${{ matrix.testbench }}
         run: |
           composer require "laravel/framework:$LARAVEL" "orchestra/testbench:$TESTBENCH" --dev --no-interaction --no-update
           composer update --prefer-stable --prefer-dist --no-interaction
 
-      - name: E[1.x]ecute tests
+      - name: Execute tests
         run: vendor/bin/pest
