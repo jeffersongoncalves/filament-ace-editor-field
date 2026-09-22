@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file.
 
+## 2.1.0 - 2026-09-22
+
+Filament v5 line.
+
+### What's changed
+
+- Tested on PHP 8.2, 8.3 and 8.4 against Laravel 11, 12 and 13 (new Pest suite + CI matrix)
+- Ace editor CDN default bumped from 1.32.7 to 1.44.0 (republish the config if you customised it)
+- Changelog workflow hardened against template injection
+- Dependabot: Filament majors ignored per branch, 7-day cooldown
+- Build tooling moved to bun; unused `ace-builds` and `npm-run-all2` removed (dist unchanged)
+- README: fixed `height()` example (needs a CSS unit, e.g. `'200px'`)
+
+**Full Changelog**: https://github.com/jeffersongoncalves/filament-ace-editor-field/compare/2.0.2...2.1.0
+
 ## 2.0.2 - 2026-08-05
 
 ### What's Changed
