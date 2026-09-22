@@ -1,77 +1,86 @@
-# Basic set up for three package managers
+# Each branch is locked to one Filament major (1.x = Filament v4, 2.x = Filament v5).
+# Filament majors are ignored so Dependabot never proposes a cross-major bump on a branch.
 
 version: 2
 
 updates:
 
-  # Maintain dependencies for GitHub Actions
+  # ---------- 1.x (Filament v4) ----------
   - package-ecosystem: "github-actions"
     directory: "/"
     target-branch: 1.x
     schedule:
       interval: "weekly"
+    cooldown:
+      default-days: 7
     groups:
       actions-deps:
         patterns:
           - "*"
 
-  # Maintain dependencies for npm
-  - package-ecosystem: "npm"
+  - package-ecosystem: "bun"
     directory: "/"
     target-branch: 1.x
     schedule:
       interval: "weekly"
+    cooldown:
+      default-days: 7
     groups:
-      actions-deps:
+      npm-deps:
         patterns:
           - "*"
 
-  # Maintain dependencies for Composer
   - package-ecosystem: "composer"
     directory: "/"
     target-branch: 1.x
-    ignore:
-      - dependency-name: "filament/filament"
-        update-types: ["version-update:semver-major"]
     schedule:
       interval: "weekly"
+    cooldown:
+      default-days: 7
+    ignore:
+      - dependency-name: "filament/*"
+        update-types: ["version-update:semver-major"]
     groups:
-      actions-deps:
+      composer-deps:
         patterns:
           - "*"
 
-  # Maintain dependencies for GitHub Actions
+  # ---------- 2.x (Filament v5) ----------
   - package-ecosystem: "github-actions"
     directory: "/"
     target-branch: 2.x
     schedule:
       interval: "weekly"
+    cooldown:
+      default-days: 7
     groups:
       actions-deps:
         patterns:
           - "*"
 
-  # Maintain dependencies for npm
-  - package-ecosystem: "npm"
+  - package-ecosystem: "bun"
     directory: "/"
     target-branch: 2.x
     schedule:
       interval: "weekly"
+    cooldown:
+      default-days: 7
     groups:
-      actions-deps:
+      npm-deps:
         patterns:
           - "*"
 
-  # Maintain dependencies for Composer
   - package-ecosystem: "composer"
     directory: "/"
     target-branch: 2.x
-    ignore:
-      - dependency-name: "filament/filament"
-        update-types: ["version-update:semver-major"]
     schedule:
       interval: "weekly"
+    cooldown:
+      default-days: 7
+    ignore:
+      - dependency-name: "filament/*"
+        update-types: ["version-update:semver-major"]
     groups:
-      actions-deps:
+      composer-deps:
         patterns:
           - "*"

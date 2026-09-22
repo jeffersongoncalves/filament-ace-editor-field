@@ -9,16 +9,23 @@
 [![Buy Me A Coffee](https://img.shields.io/badge/Buy%20Me%20A%20Coffee-support-FFDD00?style=flat-square&logo=buy-me-a-coffee&logoColor=black)](https://buymeacoffee.com/jeffersongoncalves)
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/jeffersongoncalves/filament-ace-editor-field.svg?style=flat-square)](https://packagist.org/packages/jeffersongoncalves/filament-ace-editor-field)
-[![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/jeffersongoncalves/filament-ace-editor-field/fix-php-code-style-issues.yml?branch=1.x&label=code%20style&style=flat-square)](https://github.com/jeffersongoncalves/filament-ace-editor-field/actions?query=workflow%3A"Fix+PHP+code+styling"+branch%3A1.x)
+[![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/jeffersongoncalves/filament-ace-editor-field/fix-php-code-style-issues.yml?branch=2.x&label=code%20style&style=flat-square)](https://github.com/jeffersongoncalves/filament-ace-editor-field/actions?query=workflow%3A"Fix+PHP+code+style+issues"+branch%3A2.x)
+[![Tests](https://img.shields.io/github/actions/workflow/status/jeffersongoncalves/filament-ace-editor-field/run-tests.yml?branch=2.x&label=tests&style=flat-square)](https://github.com/jeffersongoncalves/filament-ace-editor-field/actions/workflows/run-tests.yml?query=branch%3A2.x)
 [![Total Downloads](https://img.shields.io/packagist/dt/jeffersongoncalves/filament-ace-editor-field.svg?style=flat-square)](https://packagist.org/packages/jeffersongoncalves/filament-ace-editor-field)
 [![License](https://img.shields.io/packagist/l/jeffersongoncalves/filament-ace-editor-field.svg?style=flat-square)](LICENSE.md)
 
-A Laravel Filament v4 field that integrates the Ace code editor into your forms, offering a rich, syntax-highlighted code editing experience with configurable modes and themes.
+A Laravel Filament v5 field that integrates the Ace code editor into your forms, offering a rich, syntax-highlighted code editing experience with configurable modes and themes.
 
 ## Requirements
 
-- PHP 8.2 or higher
-- Filament 5.0
+- PHP 8.2 or higher (tested on 8.2, 8.3 and 8.4)
+- Laravel 11.28+, 12.x or 13.x (Laravel 13 requires PHP 8.3+)
+- Filament 5.x
+
+| Plugin branch | Filament |
+|---------------|----------|
+| 1.x           | 4.x      |
+| 2.x           | 5.x      |
 
 ## Installation
 
@@ -52,9 +59,12 @@ AceEditorInput::make('description')
 
 ## Development
 
-You can run code analysis and formatting using the following commands:
+You can run tests, code analysis and formatting using the following commands:
 
 ```bash
+# Run tests
+composer test
+
 # Run static analysis
 composer analyse
 
