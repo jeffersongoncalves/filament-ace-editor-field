@@ -16,7 +16,6 @@ thumbnail: ""
 
 # --- Compatibility & Features ---
 versions:
-  - "v3"
   - "v4"
   - "v5"
 
@@ -31,12 +30,10 @@ translation_support: false
 documentation_url: ""
 
 versioned_documentation:
-  - version: "v3"
-    url: "https://raw.githubusercontent.com/jeffersongoncalves/filament-ace-editor-field/1.x/README.md"
   - version: "v4"
-    url: "https://raw.githubusercontent.com/jeffersongoncalves/filament-ace-editor-field/2.x/README.md"
+    url: "https://raw.githubusercontent.com/jeffersongoncalves/filament-ace-editor-field/1.x/README.md"
   - version: "v5"
-    url: "https://raw.githubusercontent.com/jeffersongoncalves/filament-ace-editor-field/3.x/README.md"
+    url: "https://raw.githubusercontent.com/jeffersongoncalves/filament-ace-editor-field/2.x/README.md"
 
 documentation_content: ""
 

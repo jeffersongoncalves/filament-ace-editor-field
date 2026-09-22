@@ -8,6 +8,7 @@
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/jeffersongoncalves/filament-ace-editor-field.svg?style=flat-square)](https://packagist.org/packages/jeffersongoncalves/filament-ace-editor-field)
 [![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/jeffersongoncalves/filament-ace-editor-field/fix-php-code-style-issues.yml?branch=1.x&label=code%20style&style=flat-square)](https://github.com/jeffersongoncalves/filament-ace-editor-field/actions?query=workflow%3A"Fix+PHP+code+styling"+branch%3A1.x)
+[![Tests](https://img.shields.io/github/actions/workflow/status/jeffersongoncalves/filament-ace-editor-field/run-tests.yml?branch=1.x&label=tests&style=flat-square)](https://github.com/jeffersongoncalves/filament-ace-editor-field/actions/workflows/run-tests.yml?query=branch%3A1.x)
 [![Total Downloads](https://img.shields.io/packagist/dt/jeffersongoncalves/filament-ace-editor-field.svg?style=flat-square)](https://packagist.org/packages/jeffersongoncalves/filament-ace-editor-field)
 [![License](https://img.shields.io/packagist/l/jeffersongoncalves/filament-ace-editor-field.svg?style=flat-square)](LICENSE.md)
 
@@ -15,24 +16,23 @@ A Laravel Filament v4 field that integrates the Ace code editor into your forms,
 
 ## Requirements
 
-- PHP 8.2 or higher
-- Filament 4.0 or higher
-
+- PHP 8.2 or higher (tested on 8.2, 8.3 and 8.4)
+- Laravel 11.28+, 12.x or 13.x (Laravel 13 requires PHP 8.3+)
+- Filament 4.x
 
 ## Version Compatibility
 
 | Plugin Version | Filament Version | PHP Version |
 | -------------- | ---------------- | ----------- |
 | `^2.0`         | `^5.0`           | `^8.2`      |
-| `^1.0`         | `^4.0`           | `^8.2`      |
-
+| `^1.1`         | `^4.0`           | `^8.2`      |
 
 ## Installation
 
 You can install the package via composer:
 
 ```bash
-composer require jeffersongoncalves/filament-ace-editor-field
+composer require jeffersongoncalves/filament-ace-editor-field:^1.1
 ```
 
 ## Usage
@@ -52,16 +52,19 @@ use JeffersonGoncalves\Filament\AceEditorField\Forms\Components\AceEditorInput;
 AceEditorInput::make('description')
     ->mode('html')
     ->theme('monokai')
-    ->height(200)
+    ->height('200px')
     ->placeholder('Enter your description here')
     ->required(),
 ```
 
 ## Development
 
-You can run code analysis and formatting using the following commands:
+You can run tests, code analysis and formatting using the following commands:
 
 ```bash
+# Run tests
+composer test
+
 # Run static analysis
 composer analyse
 

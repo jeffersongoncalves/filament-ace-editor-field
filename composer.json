@@ -18,23 +18,30 @@
         }
     ],
     "require": {
-        "php": "^8.2|^8.3",
+        "php": "^8.2",
         "filament/filament": "^4.8",
         "spatie/laravel-package-tools": "^1.14.0"
     },
     "require-dev": {
         "larastan/larastan": "^3.0",
         "laravel/pint": "^1.21",
-        "orchestra/testbench": "^9.0|^10.0"
+        "orchestra/testbench": "^9.0|^10.0|^11.0",
+        "pestphp/pest": "^3.7|^4.0"
     },
     "autoload": {
         "psr-4": {
             "JeffersonGoncalves\\Filament\\AceEditorField\\": "src"
         }
     },
+    "autoload-dev": {
+        "psr-4": {
+            "JeffersonGoncalves\\Filament\\AceEditorField\\Tests\\": "tests"
+        }
+    },
     "scripts": {
         "post-autoload-dump": "@php ./vendor/bin/testbench package:discover --ansi",
         "analyse": "vendor/bin/phpstan analyse",
+        "test": "vendor/bin/pest",
         "format": "vendor/bin/pint"
     },
     "config": {

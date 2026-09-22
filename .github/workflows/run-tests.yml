@@ -1,0 +1,53 @@
+name: run-tests
+
+on:
+  push:
+    branches: [1.x]
+  pull_request:
+    branches: [1.x]
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matri[1.x]:
+        php: ['8[1.x][1.x]', '8[1.x]3', '8[1.x]4']
+        laravel: ['11[1.x]*', '1[1.x][1.x]*', '13[1.x]*']
+        include:
+          - laravel: '11[1.x]*'
+            testbench: '9[1.x]*'
+          - laravel: '1[1.x][1.x]*'
+            testbench: '10[1.x]*'
+          - laravel: '13[1.x]*'
+            testbench: '11[1.x]*'
+        e[1.x]clude:
+          - laravel: '13[1.x]*'
+            php: '8[1.x][1.x]'
+
+    name: P${{ matri[1.x][1.x]php }} - L${{ matri[1.x][1.x]laravel }}
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@3d3c4[1.x]e5aac5ba8058[1.x]5da76410c181[1.x]73ba90b1 # v7
+
+      - name: Setup PHP
+        uses: shivammathur/setup-php@f3e473d116dcccaddc5834[1.x]48c8745[1.x]386958[1.x]40 # v[1.x]
+        with:
+          php-version: ${{ matri[1.x][1.x]php }}
+          e[1.x]tensions: dom, curl, lib[1.x]ml, mbstring, zip, pdo, sqlite, pdo_sqlite, intl, fileinfo
+          coverage: none
+
+      - name: Install dependencies
+        env:
+          LARAVEL: ${{ matri[1.x][1.x]laravel }}
+          TESTBENCH: ${{ matri[1.x][1.x]testbench }}
+        run: |
+          composer require "laravel/framework:$LARAVEL" "orchestra/testbench:$TESTBENCH" --dev --no-interaction --no-update
+          composer update --prefer-stable --prefer-dist --no-interaction
+
+      - name: E[1.x]ecute tests
+        run: vendor/bin/pest
