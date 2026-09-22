@@ -4,13 +4,11 @@
     "scripts": {
         "build:styles": "postcss resources/css/index.css -o resources/dist/filament-ace-editor-field.css",
         "build:scripts": "node bin/build.js",
-        "build": "npm-run-all build:*"
+        "build": "bun run build:styles && bun run build:scripts"
     },
     "devDependencies": {
-        "ace-builds": "^1.44.0",
         "cssnano": "^9.0.5",
         "esbuild": "^0.28.2",
-        "npm-run-all2": "^9.0.3",
         "postcss": "^8.5.28",
         "postcss-cli": "^12.0.0",
         "postcss-nesting": "^14.0.1"
