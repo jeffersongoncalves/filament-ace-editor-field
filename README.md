@@ -52,7 +52,7 @@ use JeffersonGoncalves\Filament\AceEditorField\Forms\Components\AceEditorInput;
 AceEditorInput::make('description')
     ->mode('html')
     ->theme('monokai')
-    ->height(200)
+    ->height('200px')
     ->placeholder('Enter your description here')
     ->required(),
 ```
