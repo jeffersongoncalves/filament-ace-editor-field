@@ -8,7 +8,7 @@
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/jeffersongoncalves/filament-ace-editor-field.svg?style=flat-square)](https://packagist.org/packages/jeffersongoncalves/filament-ace-editor-field)
 [![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/jeffersongoncalves/filament-ace-editor-field/fix-php-code-style-issues.yml?branch=1.x&label=code%20style&style=flat-square)](https://github.com/jeffersongoncalves/filament-ace-editor-field/actions?query=workflow%3A"Fix+PHP+code+styling"+branch%3A1.x)
-[![Tests](https://img.shields.io/github/actions/workflow/status/jeffersongoncalves/filament-ace-editor-field/run-tests.yml?branch=1.x&label=tests&style=flat-square)](https://github.com/jeffersongoncalves/filament-ace-editor-field/actions/workflows/run-tests.yml?query=branch%3A1.x)
+[![Tests](https://img.shields.io/github/actions/workflow/status/jeffersongoncalves/filament-ace-editor-field/tests.yml?branch=1.x&label=tests&style=flat-square)](https://github.com/jeffersongoncalves/filament-ace-editor-field/actions/workflows/tests.yml?query=branch%3A1.x)
 [![Total Downloads](https://img.shields.io/packagist/dt/jeffersongoncalves/filament-ace-editor-field.svg?style=flat-square)](https://packagist.org/packages/jeffersongoncalves/filament-ace-editor-field)
 [![License](https://img.shields.io/packagist/l/jeffersongoncalves/filament-ace-editor-field.svg?style=flat-square)](LICENSE.md)
 
