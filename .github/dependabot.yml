@@ -38,7 +38,7 @@ updates:
         patterns:
           - '*'
 
-  - package-ecosystem: bun
+  - package-ecosystem: npm
     directory: /
     target-branch: 1.x
     schedule:
@@ -46,7 +46,7 @@ updates:
     cooldown:
       default-days: 7
     groups:
-      bun-deps:
+      npm-deps:
         patterns:
           - '*'
 
@@ -80,7 +80,7 @@ updates:
         patterns:
           - '*'
 
-  - package-ecosystem: bun
+  - package-ecosystem: npm
     directory: /
     target-branch: 2.x
     schedule:
@@ -88,6 +88,6 @@ updates:
     cooldown:
       default-days: 7
     groups:
-      bun-deps:
+      npm-deps:
         patterns:
           - '*'
