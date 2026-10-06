@@ -4,7 +4,7 @@
     "scripts": {
         "build:styles": "postcss resources/css/index.css -o resources/dist/filament-ace-editor-field.css",
         "build:scripts": "node bin/build.js",
-        "build": "bun run build:styles && bun run build:scripts"
+        "build": "pnpm run build:styles && pnpm run build:scripts"
     },
     "devDependencies": {
         "cssnano": "^9.0.5",
